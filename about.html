@@ -11,7 +11,7 @@
     height: 110px; /* Increased height */
     position: relative;
     margin: 20px auto;
-    margin-top: 200px;
+    margin-top: 250px;
     transform: rotate(-45deg);
     background: red;
     animation: pulse 1s infinite;
@@ -40,11 +40,15 @@
     top: 0;
 }
 
-.heart span {
+
+
+		.heart span {
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     transform: rotate(45deg); /* Rotate text to align horizontally */
+    position: relative; /* Allows z-index to take effect */
+    z-index: 1; /* Brings text to the front */
 }
 	
 
