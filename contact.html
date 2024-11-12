@@ -4,109 +4,55 @@
 	<title>ZeynepSeckinli</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<style>
-		/* Heart Animation */
-		.heart {
-			width: 100px;
-			height: 90px;
-			position: relative;
-			margin: 20px auto;
-			transform: rotate(-45deg);
-			background: red;
-			animation: pulse 1s infinite;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.heart::before,
-		.heart::after {
-			content: "";
-			width: 100px;
-			height: 90px;
-			background: red;
-			position: absolute;
-			border-radius: 50%;
-		}
-
-		.heart::before {
-			top: -50px;
-			left: 0;
-		}
-
-		.heart::after {
-			left: 50px;
-			top: 0;
-		}
-
-		.heart span {
-			color: white;
-			font-weight: bold;
-			font-size: 16px;
-			transform: rotate(45deg); /* Rotate text to align horizontally */
-		}
-
-		@keyframes pulse {
-			0%, 100% {
-				transform: scale(1) rotate(-45deg);
-			}
-			50% {
-				transform: scale(1.2) rotate(-45deg);
-			}
-		}
-	</style>
 </head>
 <body>
 	<div class="wraper">
 		<div class="container">
-			<div class="left-content p-30">
-				<div class="logo">
-					<a href="index.html">
-						<span>My</span>
-						<span>Resume</span>
-					</a>
-				</div>
-				<div class="nav">
+		<div class="left-content p-30">
+			<div class="logo">
+				<a href="index.html">
+					<span>My</span>
+					<span>Resume</span>
+				</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="workprofile.html">Work Profile</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="left-footer">
+				<div class="social-icons">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="workprofile.html">Work Profile</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="education.html">Education</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="https://www.linkedin.com/in/zeynepseckinli/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="left-footer">
-					<div class="social-icons">
-						<ul>
-							<li><a href="https://www.linkedin.com/in/zeynepseckinli/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="foot-contact">
-						<ul>
-							<li>zeyneppseckinli@gmail.com</li>
-						</ul>
-					</div>
-					
-					<div class="copy-rights">Copyright &copy;2023 All rights reserved</div>
+				<div class="foot-contact">
+					<ul>
+						<li>zeyneppseckinli@gmail.com</li>
+					</ul>
 				</div>
+				
+				<div class="copy-rights">Copyright &copy;2023 All rights reserved</div>
 			</div>
-			<div class="main-content">
-				<div class="section1 p-30" id="Contact">
-					<div class="pg-sub-title">Contact Me</div>
-					<div class="text">
-						You can reach me via email at <a href="mailto:zeyneppseckinli@gmail.com">zeyneppseckinli@gmail.com</a>. Connect with me on LinkedIn for professional networking.
-					</div>
-					<!-- Heart Animation -->
-					<div class="heart">
-						<span>berkuş</span>
-					</div>
+
+		</div>
+		<div class="main-content">
+			<div class="section1 p-30" id="Contact">
+				<div class="pg-sub-title">Contact Me</div>
+				<div class="text">
+					You can reach me via email at <a href="mailto:zeyneppseckinli@gmail.com">zeyneppseckinli@gmail.com</a>. Connect with me on LinkedIn for professional networking.
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>
