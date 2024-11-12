@@ -5,46 +5,55 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<style>
-
+		/* Heart Animation */
 		.heart {
-    width: 100px;
-    height: 90px;
-    position: relative;
-    margin: 20px auto;
-    transform: rotate(-45deg);
-    background: red;
-    animation: pulse 1s infinite;
-}
+			width: 100px;
+			height: 90px;
+			position: relative;
+			margin: 20px auto;
+			transform: rotate(-45deg);
+			background: red;
+			animation: pulse 1s infinite;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-.heart::before,
-.heart::after {
-    content: "";
-    width: 100px;
-    height: 90px;
-    background: red;
-    position: absolute;
-    border-radius: 50%;
-}
+		.heart::before,
+		.heart::after {
+			content: "";
+			width: 100px;
+			height: 90px;
+			background: red;
+			position: absolute;
+			border-radius: 50%;
+		}
 
-.heart::before {
-    top: -50px;
-    left: 0;
-}
+		.heart::before {
+			top: -50px;
+			left: 0;
+		}
 
-.heart::after {
-    left: 50px;
-    top: 0;
-}
+		.heart::after {
+			left: 50px;
+			top: 0;
+		}
 
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1) rotate(-45deg);
-    }
-    50% {
-        transform: scale(1.2) rotate(-45deg);
-    }
-}
-		
+		.heart span {
+			color: white;
+			font-weight: bold;
+			font-size: 16px;
+			transform: rotate(45deg); /* Rotate text to align horizontally */
+		}
+
+		@keyframes pulse {
+			0%, 100% {
+				transform: scale(1) rotate(-45deg);
+			}
+			50% {
+				transform: scale(1.2) rotate(-45deg);
+			}
+		}
 	</style>
 </head>
 <body>
@@ -92,7 +101,9 @@
 						You can reach me via email at <a href="mailto:zeyneppseckinli@gmail.com">zeyneppseckinli@gmail.com</a>. Connect with me on LinkedIn for professional networking.
 					</div>
 					<!-- Heart Animation -->
-					<div class="heart"></div>
+					<div class="heart">
+						<span>berkuş</span>
+					</div>
 				</div>
 			</div>
 		</div>
