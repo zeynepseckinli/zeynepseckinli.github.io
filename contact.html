@@ -5,37 +5,46 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<style>
+
 		.heart {
-			width: 100px;
-			height: 90px;
-			position: relative;
-			margin: 20px auto;
-			transform: rotate(-45deg);
-			animation: pulse 1s infinite;
-		}
-		.heart::before,
-		.heart::after {
-			content: "";
-			width: 100px;
-			height: 90px;
-			background: red;
-			position: absolute;
-			border-radius: 50px 50px 0 0;
-		}
-		.heart::before {
-			left: 50px;
-		}
-		.heart::after {
-			top: -50px;
-		}
-		@keyframes pulse {
-			0%, 100% {
-				transform: scale(1) rotate(-45deg);
-			}
-			50% {
-				transform: scale(1.2) rotate(-45deg);
-			}
-		}
+    width: 100px;
+    height: 90px;
+    position: relative;
+    margin: 20px auto;
+    transform: rotate(-45deg);
+    background: red;
+    animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 90px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+}
+		
 	</style>
 </head>
 <body>
