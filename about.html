@@ -7,44 +7,46 @@
 	<style>
 		/* Heart Animation */
 		.heart {
-			width: 100px;
-			height: 90px;
-			position: relative;
-			margin: 20px auto;
-			transform: rotate(-45deg);
-			background: red;
-			animation: pulse 1s infinite;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+    width: 120px; /* Increased width */
+    height: 110px; /* Increased height */
+    position: relative;
+    margin: 20px auto;
+    margin-top: 100px;
+    transform: rotate(-45deg);
+    background: red;
+    animation: pulse 1s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-		.heart::before,
-		.heart::after {
-			content: "";
-			width: 100px;
-			height: 90px;
-			background: red;
-			position: absolute;
-			border-radius: 50%;
-		}
+.heart::before,
+.heart::after {
+    content: "";
+    width: 120px; /* Match the width of .heart */
+    height: 110px; /* Match the height of .heart */
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+}
 
-		.heart::before {
-			top: -50px;
-			left: 0;
-		}
+.heart::before {
+    top: -60px; /* Adjusted based on new dimensions */
+    left: 0;
+}
 
-		.heart::after {
-			left: 50px;
-			top: 0;
-		}
+.heart::after {
+    left: 60px; /* Adjusted based on new dimensions */
+    top: 0;
+}
 
-		.heart span {
-			color: white;
-			font-weight: bold;
-			font-size: 18px; /* Increased font size */
-			transform: rotate(45deg); /* Rotate text to align horizontally */
-		}
+.heart span {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transform: rotate(45deg); /* Rotate text to align horizontally */
+}
+	
 
 		@keyframes pulse {
 			0%, 100% {
